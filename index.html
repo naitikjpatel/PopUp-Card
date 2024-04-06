@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- This is For the Open The Popup -->
+        <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+        <div class="popup" id="popup">
+
+            <img src="404-tick.png" alt="">
+            <h2>Thank You!</h2>
+            <p>Your details has been successfully submitted. Thanks!</p>
+            <!-- This is For the Close the popup -->
+            <button type="button" onclick="closePopup()">OK</button>
+
+        </div>
+    </div>
+
+    
+    <script>
+
+let popup=document.getElementById("popup");
+function openPopup(){
+    // Here We need to Change the Position ,Scale And Visiblity of the popup Card 
+    popup.classList.add("open-popup");
+}
+function closePopup()
+{
+    popup.classList.remove("open-popup");
+
+}
+
+    </script>
+    
+</body>
+</html>
